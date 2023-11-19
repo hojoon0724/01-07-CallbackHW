@@ -122,3 +122,61 @@ calcCallback(4, 8, addTwoNums);
 calcCallback(9, 74, subtractTwoNums);
 calcCallback(82, 7, multiplyTwoNums);
 calcCallback(244, 4, divideTwoNums);
+
+// Function definition placement
+// Clean up this code, so that it works and has function definitions in the correct place
+const bar = () => {
+  console.log("bar here");
+};
+
+const foo1 = () => {
+  console.log("foo here");
+};
+
+foo1();
+bar();
+
+// Error reading
+// What is meant by the error(s) this produces?
+
+/*
+foo();
+const foo ()=>{
+    console.log('hi');
+}
+*/
+
+// There are 2 possible answers.
+
+// Answer 1
+/*
+/Users/hojoon/Desktop/Coding-Stuff/01-07/CallbackHW/combining_datatypes.js:144
+const foo ()=>{
+      ^
+SyntaxError: Identifier 'foo' has already been declared
+*/
+// This means that it cannot use function "foo" because it's already been defined and it can't change it because it's a "const"
+
+// Answer 2
+/*
+/Users/hojoon/Desktop/Coding-Stuff/01-07/CallbackHW/combining_datatypes.js:144
+const foo ()=>{
+      ^^^
+SyntaxError: Missing initializer in const declaration
+*/
+// This means that the function "foo" is trying to run but the function "foo" hasn't been defined. (i.e., the order is wrong)
+
+// -----------------------------------------------------
+// Section 3 - Array Methods with Callbacks
+// -----------------------------------------------------
+
+// A few array methods use callbacks. For example .map - .map takes each element of an array and does something to it and returns a new arrays.
+// But what should it do? Multiply everything by 5? Capitalize everything? If .map had a hard-coded thing it always did with an array, it wouldn't be very flexible.
+// By allowing a callback to determine what happens to each array element we get a lot of flexibility and we can do some really powerful things.
+// Two arrays to work with
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0];
+const panagram = ["The", "quick", "brown", "fox", "jumps", "over", "the", "lazy", "dog"];
+
+// The first question is for the numbers array. The second question is for the words array.
+// You don't have to write an answer to the thought questions.
