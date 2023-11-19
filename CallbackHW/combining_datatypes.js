@@ -29,3 +29,36 @@ const apartmentBuilding = [
 ];
 
 console.log(apartmentBuilding[2].tenants[0]);
+
+// Create a function knit that returns an object that has the following kinds of properties item: scarf, size : 6ft etc. Log a value of that object (hint: call the function and then call a property on the return value).
+
+const knit = () => {
+  const specs = {
+    item: "scarf",
+    size: "6ft",
+    material: "wool",
+  };
+  return specs;
+};
+console.log(knit().material);
+
+// Create a function crayonSelector that returns an object that has an array (you can reuse your crayonBox object). Log one of the elements of that array.
+
+const crayonSelector = () => {
+  const crayonBox = {
+    colors: ["red", "blue", "green", "yellow"],
+  };
+  return crayonBox;
+};
+console.log(crayonSelector().colors[1]);
+
+// Create a function powerButton that returns a function called options - options should console.log a simple message like select a song. Call that inner function
+
+const powerButton = () => {
+  function options() {
+    console.log("some....... BODY once told me the world is macaroni");
+  }
+  return options();
+};
+
+powerButton();
