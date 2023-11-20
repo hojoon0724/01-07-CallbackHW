@@ -17,15 +17,20 @@ console.log(bottle.color[0]);
 
 // Create an array called receipt that has at least one object in it. The inner objects should be items that have a name and a price. Log one of the properties of that inner object.
 
-const receipt = ["home depot", "trader joes", "amazon", { seller: "apple", amount: 1000 }];
+const receipt = [
+  { seller: "home depot", amount: 340 },
+  { seller: "trader joes", amount: 120 },
+  { seller: "amazon", amount: 3440 },
+  { seller: "apple", amount: 1300 },
+];
 console.log(receipt[3].amount);
 
 // Create an array called apartmentBuilding that has an array as one of its elements, the inner array should be the names of the tenants. Log one of the elements of the inner array.
 
 const apartmentBuilding = [
-  { unit: 1, tenants: ["Jason Moomoo", "Paula Deen"] },
-  { unit: 2, tenants: ["Alex Johnson", "Emily Davis"] },
-  { unit: 3, tenants: ["Jessica Miller", "Jordan Brown", "Taylor Anderson"] },
+  { unit: 1, tenants: ["Jason Moomoo", "Paula Dean Martin"] },
+  { unit: 2, tenants: ["Prince", "Elvis Pelvis"] },
+  { unit: 3, tenants: ["Jessica Chastain", "Chris Brown", "Paul Thomas Anderson Paak"] },
 ];
 
 console.log(apartmentBuilding[0].tenants[0]);
