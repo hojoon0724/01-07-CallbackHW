@@ -37,7 +37,7 @@ console.log("weeee");
 // Commenting Code
 // -----------------------------------------------------
 
-// Makes function "f" that starts with the value "1"
+// Makes function "f" that sets up "l" as an argument. (l looks)
 const f = (l) => {
   // Establishes variables "es", "p", "c", and "n"
   let es = 0,
