@@ -44,7 +44,7 @@ const f = (l) => {
     p = 0,
     c = 1,
     n = 0;
-  // Starts a loop where the condition is "c" is less or equal to "0"
+  // Starts a loop where the condition is: "c" is less or equal to "l"
   while (c <= l) {
     // Reassigns "n" value to the sum of "c" and "p"
     n = c + p;
